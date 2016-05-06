@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -10,6 +12,17 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  var success = function(message) {
+    alert(message);
+  };
+
+  var failure = function(info) {
+    alert(info);
+  };
+
+  console.log(JSON.stringify(coap));
+  coap.get("World", success, failure);
+  coap.test("World", success, failure);
 
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
