@@ -1,2 +1,6 @@
-# ionic-coap-example
-A Example of CoAP with Ionic
+#Ionic CoAP
+
+
+> Just A try with CoAP Plugin
+
+URL: [https://github.com/phodal/coap-cordova-plugin](https://github.com/phodal/coap-cordova-plugin)
