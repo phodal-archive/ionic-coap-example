@@ -20,9 +20,9 @@ angular.module('starter.controllers', [])
     alert(info);
   };
 
-  console.log(JSON.stringify(coap));
-  coap.get("World", success, failure);
-  coap.test("World", success, failure);
+  // coap.test(success, failure);
+  coap.get("coap://vs0.inf.ethz.ch/", success, failure);
+  coap.post("coap://vs0.inf.ethz.ch/", success, failure, "{'hello': 'world'}");
 
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
