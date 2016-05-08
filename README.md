@@ -3,4 +3,24 @@
 
 > Just A try with CoAP Plugin
 
-URL: [https://github.com/phodal/coap-cordova-plugin](https://github.com/phodal/coap-cordova-plugin)
+**Requirements **
+
+Install Plugin
+
+     cordova plugin add https://github.com/phodal/cordova-plugin-coap
+     
+Node Server
+
+    git clone http://github.com/phodal/lan
+    node server
+
+**Install
+
+Test     
+
+    npm install -g cordova ionic
+    ionic run ios
+
+License
+---
+MIT
